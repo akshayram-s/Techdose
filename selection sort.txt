@@ -5,9 +5,11 @@ public:
         for(i=0;i<n;i++)
         {
             min = i;
-            for(j=i+1;j<n;j++)
-                if (arr[j] < arr[min])
+            for(j=i+1;j<n;j++){
+                if (arr[j] < arr[min]){
                     min = j;
+                }
+            }
             swap(arr[i],arr[min]);
         }
         return arr;
