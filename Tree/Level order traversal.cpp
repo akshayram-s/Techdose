@@ -7,7 +7,6 @@ public:
         }
         queue<TreeNode*>q;
         q.push(root);
-
         while(!q.empty()){
             int size=q.size();
             vector<int>temp;
